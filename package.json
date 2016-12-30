@@ -1,0 +1,57 @@
+{
+  "name": "react-scaffolding",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "prestart": "babel-node tools/startMessage.js",
+    "start": "npm-run-all --parallel test:watch open:src lint:watch",
+    "open:src": "babel-node tools/srcServer.js",
+    "lint": "node_modules/.bin/esw webpack.config.* src tools",
+    "lint:watch": "npm run lint -- --watch",
+    "test": "mocha --reporter progress tools/testSetup.js \"src/**/*.test.js\"",
+    "test:watch": "npm run test -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KabeerRifaye/react-scaffolding.git"
+  },
+  "author": "Kabeer Rifaye <kabeerrifaye@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KabeerRifaye/react-scaffolding/issues"
+  },
+  "homepage": "https://github.com/KabeerRifaye/react-scaffolding#readme",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-react-display-name": "^2.0.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-react-hmre": "^1.1.1",
+    "babel-register": "^6.18.0",
+    "colors": "^1.1.2",
+    "eslint": "^3.12.2",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-react": "^6.8.0",
+    "eslint-watch": "^2.1.14",
+    "eventsource-polyfill": "^0.9.6",
+    "expect": "^1.20.2",
+    "express": "^4.14.0",
+    "mocha": "^3.2.0",
+    "npm-run-all": "^3.1.2",
+    "open": "0.0.5",
+    "webpack": "^1.14.0",
+    "webpack-dev-middleware": "^1.9.0",
+    "webpack-hot-middleware": "^2.14.0"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.20.0",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1",
+    "jsdom": "^9.9.1",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1"
+  }
+}
