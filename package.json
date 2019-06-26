@@ -12,6 +12,16 @@
     "test": "mocha --reporter progress tools/testSetup.js \"src/**/*.test.js\"",
     "test:watch": "npm run test -- --watch"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KabeerRifaye/react-scaffolding.git"
+  },
+  "author": "Kabeer Rifaye <kabeerrifaye@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KabeerRifaye/react-scaffolding/issues"
+  },
+  "homepage": "https://github.com/KabeerRifaye/react-scaffolding#readme",
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-core": "^6.21.0",
@@ -45,6 +55,7 @@
     "babel-polyfill": "^6.20.0",
     "bootstrap": "^3.3.7",
     "jquery": "^3.1.1",
+    "jsdom": "^9.9.1",
     "prop-types": "^15.6.1",
     "react": "^15.4.1",
     "react-bootstrap": "^0.31.5",
